@@ -1,0 +1,46 @@
+# NHL MVP Predictor
+## Introduction
+The Hart Memorial Trophy is one of the most prestigious awards in the National Hockey League, which is given annually to the player deemed most valuable to their team. While the selection process is influenced by various performance metrics and subjective factors, predicting which player will win the Hart Trophy remains a complex task. By using data-driven techniques, this project aims to develop a predictive model that will use player statistics and other relevant features to forecast a players’ chances of winning the Hart Trophy. 
+### Stakeholder Significance
+The predictive model developed to forecast NHL players’ likelihood of winning the Hart Trophy will provide significant value to various stakeholders. For team management and coaches, the model offers a data-driven tool for assessing players’ performance in identifying potential Most Valuable Player candidates. This will enable informed decisions such as contract negotiations, player development, and game strategy. For players, insights from this model can help them benchmark performance against past winners, helping the players set goals for the season. For media outlets and game analysts, the model will introduce a new level of statistical predictions, which will allow for more accurate pre-award forecasts. For fans, this model can add a deeper engagement into player statistics and award outcomes. Ultimately, the model will add a layer of objectivity to an often-subjective process. This allows all stakeholders to have actionable insights based on performance data.
+## Data Selection
+The goal of this project is to determine if different factors will affect a player’s chances of winning the Hart Trophy. A model will be created which will predict chances of winning the trophy based on previous winners’ performance. To begin, I found a dataset from Kaggle entitled ‘NHL 2004-2018 Player Data.’ (https://www.kaggle.com/datasets/xavya77/nhl04to18/data) This dataset contains information on all NHL skaters from the 2004 to 2018 season, and has more than 13,000 entries. Most importantly, the dataset also contains if the player won the Hart Trophy or not. The dependent variable is the Hart Trophy win, and the independent variables is all the other player information.  
+## Modeling and Methods
+### Data Preparation
+To begin with my analysis, I imported the data set into Jupyter Notebook. Then I listed out all the columns to see which ones would be irrelevant to my analysis. I decided that 4 columns were not needed, specifically type of player, player name, the team of the player, and which season they played. Then I wanted to ensure the types of all data points were correct. I went through each column to ensure it was the correct type. With this data set, all the values except for the ‘HART’ column were numeric. With the ‘HART’ column, I ensured it was a binary value, as it is my dependent variable for my regression model. I also made sure to drop NA values to remove any potential errors when creating my model. Lastly, I used encoding on the ‘Position’ variable.  For my analysis this was an optional step, but I completed it just in case it was needed later. The steps of dataset cleaning are shown below.
+ 
+### Model Creation
+The model I am planning to use for this project is logistic regression. This model will use different performance metrics to determine a player’s success in winning the trophy. To train and test the model, I will create different scenarios with the model to test it and ensure it is successful in its predictions.
+	To create my model, I began by splitting my data into the training and testing sets. Then I used Jupyter Notebook to fit a linear regression model and used it to calculate predictive values, such as the Mean Squared Error and the R2 scores. I also calculated the Mean Absolute error and the Root Mean Squared Error. All the values calculated are shown below.  
+With these values, it shows that my model performs poorly when accurately predicting Hart trophy winners. I would like this model to be as accurate as possible, so I investigated it further.  This may have been due to irrelevant features being selected and used when creating the linear regression. I created a second model using only highly correlated features to test this. I began by creating a correlation matrix to show which variables have the strongest influence on the ‘votes’ variable. This is shown below.
+ 
+I then dropped variables which had a very weak correlation and recreated the linear regression model again. The results of the second regression model are shown below. 
+Once the second regression model was created, I compared the calculated values to the first regression model. 
+## Interpretation of Results
+The results of the second regression model show that there was some improvement when compared to the first regression. However, with this model there is still significant room for improvement. The low performance metrics may suggest that my model is overly simplistic, and I am assuming linear relationships where they may not exist. With the low R2 value, this may be due to the presence of potentially unmeasured factors that significantly influence voting outcomes. This could be non-numerical factors such as player reputation, team dynamics, or media coverage.
+### Visualizations
+Although my data analysis did not work as initially intended, I did create a few visualizations which can help me draw conclusions accordingly. The first one I made were three different box plots of key factors and the Hart Trophy win. All these plots are shown in the images below. 
+ 
+The visualization above shows the Point Shares (PS) variable and its impact on Hart Trophy winners. In general, players who have won the Hart Trophy have higher point shares when compared to players who did not. The median value of this is notably higher than non-winners. The players who did not win the trophy have a larger range and mor extreme outliers compared to the winners, which indicates that higher PS values are common among the winners. 
+ 
+This next visualization shows the impact of Power Play Points (PP.1) on Hart Trophy winners. Non winners have a wider distribution when compared to winners, with more variability. The winners tend to concentrate around higher values. With both of these, there are a lot of outliers, but the median value of the winners column is higher. 
+ 
+Similarly to the previous graph, winners of the Hart Trophy have higher Even Strength Points (EV.1) when compared to non-winners. With this, the distribution between winners is skewed a lot higher. This shows that EV.1 values are typically higher with winners of the Hart Trophy. 
+Next, I created a correlation matrix heatmap to show which variables have a strong correlation with winning the Hart Trophy. This correlation matrix is shown in the image below. 
+ 
+This matrix shows us a variety of results, summarized below.
+High Correlations:
+•	G (Goals) has a high correlation with PTS (Points) (0.92) and PS (Point Shares) (0.96). This suggests that as goals increase, so do points and point shares.
+•	A (Assists) is also highly correlated with PTS (0.80) and PS (0.85), indicating that assists play a large role in a player’s total points and point share.
+•	PTS shows strong correlations with G, A, PS, and EV (Even Strength Points), which makes sense since total points include goals and assists.
+Low Correlations:
+•	HART (Hart Trophy win indicator) has low correlations with most features, implying that while the Hart Trophy might be associated with strong performance, it is not strongly linearly correlated with any single feature in this dataset.
+•	Votes show a slightly higher correlation with HART (0.21), which makes sense as more votes would be related to Hart Trophy contention but not necessarily a win.
+Moderate Correlations:
+•	There are moderate correlations between features like PP.1 (Power Play Points) and G (0.77) and EV.1 (Even Strength Points) and A (0.65). This suggests that both even strength and power-play points contribute to overall scoring but are somewhat independent metrics.
+## Conclusion
+From the model alone, the MAE value of 10.88 suggests that the predicted vote value only barely deviates from the actual value. The RMSE value suggests that this model is sort of accurate, but there is another form of variable predicting the Hart Trophy winner which is not covered in this dataset. By analyzing the coefficients, it shows that the PS (points scored) and PP.1 (points in a power play) are most beneficial when predicting winners. However, with the model being overly simplistic and not accurate, it is difficult to recommend this model to stakeholders. Initial analysis is needed before this model is truly accurate.
+## References
+NHL Hart Memorial Trophy Winners | NHL.com. (2023, June 27). Www.nhl.com. https://www.nhl.com/news/nhl-hart-memorial-trophy-winners-complete-list-287743272
+Wang, T. (2019, February 28). Predictive Analysis on eSports Games: A Case Study on League of Legends (LoL) eSports Tournaments. Cdr.lib.unc.edu; Carolina Digital Repository. https://cdr.lib.unc.edu/concern/masters_papers/8s45qd54c
+Xavya, W. (2018, December 10). “NHL Player Data 2004-2018” Kaggle.com. https://www.kaggle.com/datasets/xavya77/nhl04to18

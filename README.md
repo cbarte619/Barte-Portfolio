@@ -1,4 +1,6 @@
 # Barte-Portfolio
+Welcome to my data science portfolio! Here, you'll find a collection of projects showcasing my expertise in machine learning, and predictive modeling. From building recommendation systems to uncovering insights from real-world datasets, I enjoy transforming raw data into actionable knowledge. My work spans multiple domains, including retail analytics, customer behavior, and sports statistics.
+
 ## 1.	 Animated Film Streaming Analysis
 For this project, I was given two data sources, each with over 50,000 animated movie titles. Each data set contained different information such as Rotten Tomatoes scores, country released, or director. I transformed and combined each dataset and provided insight from a streaming service standpoint.
 ## 2.	Walmart Sales Data Analysis
@@ -15,5 +17,6 @@ I used 2 different TSA complaint datasets to provide recommendations to improve 
 Provided with a list of Kia thefts and other information, I used R to provided insights into law enforcement improvements. 
 ## 8.	Movie Genre Analysis
 Given movie revenue information, I analyzed which factors will generate the most genre for box offices. I also provide recommendations on how to boost revenue for movie studios. 
-## 9.	DSC Project 2 
+## 9.	Product Recommender System
+This project was done using a dataset containing product information. I created a system to take user input and recommend products catered to user needs.
 ## 10.	 DSC Project 3

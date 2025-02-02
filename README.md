@@ -1,7 +1,7 @@
 # Barte-Portfolio
 Welcome to my data science portfolio! Here, you'll find a collection of projects showcasing my expertise in machine learning, and predictive modeling. From building recommendation systems to uncovering insights from real-world datasets, I enjoy transforming raw data into actionable knowledge. My work spans multiple domains, including retail analytics, customer behavior, and sports statistics.
 
-Learn more about my background and skills on the **[About Me](https://yourusername.github.io/Barte-Portfolio/about.html)** page.
+Learn more about my background and skills on the **[About Me](https://cbarte619.github.io/Barte-Portfolio/about.html)** page.
 
 ## 1.	 Animated Film Streaming Analysis
 For this project, I was given two data sources, each with over 50,000 animated movie titles. Each data set contained different information such as Rotten Tomatoes scores, country released, or director. I transformed and combined each dataset and provided insight from a streaming service standpoint.

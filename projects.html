@@ -1,19 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Projects</title>
+    <title>Projects - My Data Science Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        nav {
+            background-color: #f8f8f8;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .project {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Projects</h1>
+
+    <h1>My Data Science Projects</h1>
+    
     <nav>
         <a href="index.html">Home</a> |
         <a href="about.html">About</a> |
         <a href="contact.html">Contact</a>
     </nav>
+
+    <h2>Jump to a Project:</h2>
     <ul>
-        <li><a href="#">Recommender System for Retail</a></li>
-        <li><a href="#">Walmart Revenue Prediction</a></li>
-        <li><a href="#">NHL Hart Trophy Predictor</a></li>
+        <li><a href="#animated-film-streaming">🎥 Animated Film Streaming Analysis</a></li>
+        <li><a href="#walmart-sales">🛒 Walmart Sales Data Analysis</a></li>
+        <li><a href="#white-house">🏛️ White House Scheduling</a></li>
+        <li><a href="#dodgers-game">⚾ Dodgers Game Scheduling</a></li>
+        <li><a href="#nhl-mvp">🏒 NHL MVP Predictor Model</a></li>
+        <li><a href="#tsa-complaints">🛂 TSA Complaint Analysis</a></li>
+        <li><a href="#kia-theft">🚔 Kia Theft Analysis in R</a></li>
+        <li><a href="#movie-genre">🎬 Movie Genre Analysis</a></li>
+        <li><a href="#product-recommender">🛍️ Product Recommender System</a></li>
     </ul>
+
+    <div class="project" id="animated-film-streaming">
+        <h2>🎥 Animated Film Streaming Analysis</h2>
+        <p>For this project, I combined two datasets with over 50,000 animated movies, each containing different information such as Rotten Tomatoes scores, country of release, and director. I transformed and merged the datasets to provide insights from a streaming service standpoint.</p>
+    </div>
+
+    <div class="project" id="walmart-sales">
+        <h2>🛒 Walmart Sales Data Analysis</h2>
+        <p>Analyzed Walmart sales data collected over two years and built a linear regression model to recommend store locations that could maximize revenue.</p>
+    </div>
+
+    <div class="project" id="white-house">
+        <h2>🏛️ White House Scheduling</h2>
+        <p>Worked with 12 datasets related to White House appointments. Calculated key insights such as recommended hours of operation, meeting room sizes, and average visitor counts to optimize scheduling.</p>
+    </div>
+
+    <div class="project" id="dodgers-game">
+        <h2>⚾ Dodgers Game Scheduling</h2>
+        <p>Analyzed factors influencing Dodgers game attendance, including date, time, and promotional incentives, to optimize scheduling decisions.</p>
+    </div>
+
+    <div class="project" id="nhl-mvp">
+        <h2>🏒 NHL MVP Predictor Model</h2>
+        <p>Created a Linear Regression model to predict the probability of an NHL player winning the Hart Memorial Trophy based on various performance statistics.</p>
+    </div>
+
+    <div class="project" id="tsa-complaints">
+        <h2>🛂 TSA Complaint Analysis</h2>
+        <p>Used two different TSA complaint datasets to analyze trends and provide recommendations for improving the TSA screening process, especially in high-traffic airports.</p>
+    </div>
+
+    <div class="project" id="kia-theft">
+        <h2>🚔 Kia Theft Analysis in R</h2>
+        <p>Investigated Kia theft patterns using R and provided insights for law enforcement to improve prevention strategies.</p>
+    </div>
+
+    <div class="project" id="movie-genre">
+        <h2>🎬 Movie Genre Analysis</h2>
+        <p>Analyzed box office revenue data to determine the most profitable movie genres and suggested strategies to maximize revenue for movie studios.</p>
+    </div>
+
+    <div class="project" id="product-recommender">
+        <h2>🛍️ Product Recommender System</h2>
+        <p>Developed a recommendation system based on product information to suggest relevant items to users based on their preferences.</p>
+    </div>
+
 </body>
 </html>

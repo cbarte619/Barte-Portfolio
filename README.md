@@ -1,4 +1,4 @@
-# Barte-Portfolio
+# Caroline Barte's Portfolio
 Welcome to my data science portfolio! Here, you'll find a collection of projects showcasing my expertise in machine learning, and predictive modeling. From building recommendation systems to uncovering insights from real-world datasets, I enjoy transforming raw data into actionable knowledge. My work spans multiple domains, including retail analytics, customer behavior, and sports statistics.
 
 Explore my featured projects:

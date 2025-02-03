@@ -6,7 +6,7 @@ Explore my featured projects:
 - 📊 **[Walmart Revenue Prediction](https://cbarte619.github.io/Barte-Portfolio/projects.html)**
 - 🏒 **[NHL Hart Trophy Predictor](https://cbarte619.github.io/Barte-Portfolio/projects.html)**
 
-Or access all projects by clicking **[Here]((https://cbarte619.github.io/Barte-Portfolio/projects.html)**
+Or access all projects by clicking **[Here](https://cbarte619.github.io/Barte-Portfolio/projects.html)**
 
 
 ## 📌 About Me

@@ -1,15 +1,38 @@
 # White House Visitor Data Analysis  
 
 ## Introduction  
-As the scheduler for White House appointments, my goal is to analyze visitor data to uncover trends and optimize scheduling. By examining the White House Visitor Data, I aim to determine the most and least popular days for appointments. If certain days or months experience lower visitor traffic, it may be beneficial to adjust operational hours—reducing unnecessary staffing costs, minimizing foot traffic, and allowing visitees to allocate their time more effectively. This data-driven approach ensures that resources are used efficiently while maintaining accessibility for visitors.  
+As the scheduler for White House appointments, my objective is to analyze visitor data to identify trends and optimize scheduling. By examining the White House Visitor Data, I aim to determine:  
+- Which days the White House should be open for appointments.  
+- Whether certain days should be closed to visitors.  
+- If specific months warrant limited operational hours due to lower visitor traffic.  
+
+By adjusting scheduling based on visitor trends, this approach can:  
+- Reduce staffing costs and unnecessary foot traffic.  
+- Improve time management for visited officials.  
+- Optimize operational efficiency while maintaining accessibility.  
 
 ## Audience  
-The primary audience for this analysis includes:  
-- **White House executive board** – Decision-makers responsible for approving operational changes.  
-- **Scheduling team** – Those responsible for setting and managing White House hours.  
-- **Visitees** – Individuals who may provide insights to refine the proposed schedule for better alignment with their needs.  
+This analysis is intended for:  
+- **The White House Executive Board** – Decision-makers responsible for operational policies.  
+- **The Official Scheduler** – Responsible for managing White House appointment hours.  
+- **Visited Officials** – Individuals impacted by scheduling changes who can provide critical insights for refining recommendations.  
+
+Since my findings may influence appointment scheduling, it is essential that visited officials are involved in discussions to ensure practical and informed decisions.  
 
 ## Medium  
-To support my findings, I have developed:  
-- **Five visualizations** that provide an initial analysis of visitor trends.  
-- **A PowerPoint presentation** to effectively communicate recommendations, making it easier to present and justify adjustments to the White House schedule.  
+To effectively communicate my findings, I will create a **PowerPoint presentation** tailored to my audience.  
+- **For the executive board and official scheduler**, I will use technical jargon as needed.  
+- **For visited officials**, I will summarize key points, focusing on how changes impact their schedules without unnecessary technical details.  
+
+## Design Choices  
+To ensure a clear and professional presentation:  
+- **A plain, lightly colored background** is used for readability and simplicity.  
+- **Graphs include summaries at the bottom** to highlight key insights.  
+- **No animations** are added to maintain a professional and straightforward style.  
+- **A consistent color scheme (e.g., blue)** is used to highlight key data points in visualizations.  
+
+## Ethical Considerations  
+- **Data Integrity**: No modifications were made to the original data beyond removing irrelevant columns.  
+- **Data Transformation**: New columns were created (e.g., month, days between appointment scheduling and the actual appointment), but these did not alter the dataset’s integrity.  
+- **Data Credibility**: All data was legally released by the White House in CSV format, ensuring ethical sourcing and transparency.  
+- **Minimal Risks**: Since no major transformations or assumptions were made, the analysis remains unbiased and accurate.  

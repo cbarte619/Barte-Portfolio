@@ -37,6 +37,35 @@
             margin-bottom: 10px;
         }
 
+        /* Navigation Styles */
+        nav {
+            background-color: #34495e;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
         /* Section Styles */
         .intro {
             text-align: center;
@@ -79,18 +108,23 @@
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="projects.html">Projects</a> |
-        <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <section class="intro">
+    <!-- About Section -->
+    <section id="about" class="intro">
         <h1>Welcome to my Data Science portfolio!</h1>
         <p>Here, you'll find a collection of projects showcasing my expertise in machine learning, and predictive modeling. From building recommendation systems to uncovering insights from real-world datasets, I enjoy transforming raw data into actionable knowledge. My work spans multiple domains, including retail analytics, customer behavior, and sports statistics.</p>
     </section>
 
-    <section class="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
         <h2>Explore my featured projects:</h2>
         <ul>
             <li>🛒 <a href="https://github.com/cbarte619/Barte-Portfolio/tree/main/Product%20Recommendation%20System">Recommender System for Retail</a></li>
@@ -100,7 +134,8 @@
         <p>Or access all projects by clicking <a href="https://cbarte619.github.io/Barte-Portfolio/projects.html">Here</a></p>
     </section>
 
-    <section class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <h3>📬 Contact Me</h3>
         <p>Feel free to reach out through the <a href="https://cbarte619.github.io/Barte-Portfolio/contact.html">Contact Me</a> page.</p>
     </section>
